@@ -11,7 +11,7 @@ const routes = [
     component: Home
   },
   {
-    path: "/about",
+    path: "/dokumentacja",
     name: "About",
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
@@ -22,7 +22,8 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: "history"
 });
 
 export default router;
